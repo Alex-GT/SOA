@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tns="http//:itq.banco.org" targetNamespace="http//:itq.banco.org">
+	<wsdl:types>
+		<xs:schema targetNamespace="http//:itq.banco.org" elementFormDefault="qualified">
+			<xs:include schemaLocation="cliente.xsd"/>
+		</xs:schema>
+	</wsdl:types>
+	
+	<wsdl:message name="clienteRequest">
+		<wsdl:part name="parameter" element="tns:cliente"/>
+	</wsdl:message>
+	<wsdl:message name="clienteResponse">
+		<wsdl:part name="parameter" element="tns:buro"/>
+	</wsdl:message>
+	
+	<wsdl:portType name="NewPortType">
+		<wsdl:operation name="acredito">
+			<wsdl:input message="tns:clienteRequest"/>
+			<wsdl:output message="tns:clienteResponse"/>
+		</wsdl:operation>
+	</wsdl:portType>
+	
+	<wsdl:binding name="NewBinding" type="tns:NewPortType">
+		<soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="acredito">
+			<soap:operation soapAction="http//:itq.banco.org/acredito"/>
+			<wsdl:input>
+				<soap:body use="literal"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="literal"/>
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+	
+	<wsdl:service name="acredito">
+		<wsdl:port name="NewPort" binding="tns:NewBinding">
+			<soap:address location="localhost:8088/acredito"/>
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

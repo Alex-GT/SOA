@@ -1,0 +1,9 @@
+package itq.banco.org.business;
+
+public class acreditar {
+
+	public String clienteValido() {
+		String valido = "True";
+		return valido;
+	}
+}

@@ -1,0 +1,12 @@
+package itq.banco.org.business;
+
+public class acreditar {
+	clientesValidos clientesValidos = new clientesValidos("Thom","Valdiviezo","Campanario",12000.00,5000.00,0.05,5.0);
+	
+	public boolean clienteValido(String nombre,String apellidos,String curp,
+			String domicilio,double salario,double monto,
+			double tazaDeInteres,double plazo) {
+		boolean valido = true;
+		return valido;
+	}
+}

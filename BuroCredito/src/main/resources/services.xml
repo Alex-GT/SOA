@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This file was auto-generated from WSDL -->
+<!-- by the Apache Axis2 version: 1.7.8  Built on : May 19, 2018 (07:06:11 BST) -->
+<serviceGroup>
+    <service name="acredito">
+        <messageReceivers>
+            <messageReceiver mep="http://www.w3.org/ns/wsdl/in-out" class="itq.banco.org.AcreditoMessageReceiverInOut"/>
+        </messageReceivers>
+        <parameter name="ServiceClass">itq.banco.org.AcreditoImpl</parameter>
+        <parameter name="useOriginalwsdl">true</parameter>
+        <parameter name="modifyUserWSDLPortAddress">true</parameter>
+        <operation name="acredito" mep="http://www.w3.org/ns/wsdl/in-out" namespace="http//:itq.banco.org">
+            <actionMapping>http//:itq.banco.org/acredito</actionMapping>
+            <outputActionMapping>http//:itq.banco.org/NewPortType/acreditoResponse</outputActionMapping>
+        </operation>
+    </service>
+</serviceGroup>

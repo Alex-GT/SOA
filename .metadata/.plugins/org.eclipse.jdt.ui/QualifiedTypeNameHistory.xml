@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.banco.itq.BuroDocument"/>
+<fullyQualifiedTypeName name="org.banco.itq.BuroDocument.Factory"/>
+<fullyQualifiedTypeName name="org.banco.itq.ClienteDocument"/>
+<fullyQualifiedTypeName name="org.banco.itq.ClienteDocument.Cliente"/>
+<fullyQualifiedTypeName name="org.banco.itq.BuroDocument.Buro"/>
+<fullyQualifiedTypeName name="java.util.FormatFlagsConversionMismatchException"/>
+<fullyQualifiedTypeName name="itq.banco.org.business.clientesValidos"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="itq.banco.org.business.ClientesValidos"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.awt.List"/>
+</qualifiedTypeNameHistroy>

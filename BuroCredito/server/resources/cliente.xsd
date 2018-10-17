@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http//:itq.banco.org" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http//:itq.banco.org">
+    <xs:element name="cliente">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="nombre" type="xs:string"/>
+                <xs:element name="apellidos" type="xs:string"/>
+                <xs:element name="curp" type="xs:string"/>
+                <xs:element name="domicilio" type="xs:string"/>
+                <xs:element name="salario" type="xs:double"/>
+                <xs:element name="monto" type="xs:double"/>
+                <xs:element name="tazaDeInteres" type="xs:double"/>
+                <xs:element name="plazo" type="xs:double"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="buro">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="acredito" type="xs:boolean"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
